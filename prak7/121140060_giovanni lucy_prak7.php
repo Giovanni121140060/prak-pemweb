@@ -6,24 +6,24 @@
 class mahasiswa {
   public $nama;
   public $nim;
-  public $prodi;
+  public $kelasprak;
 
-  public function __construct($nama, $nim, $prodi) {
+  public function __construct($nama, $nim, $kelasprak) {
     $this->nama = $nama;
     $this->nim = $nim;
-    $this->prodi = $prodi;
+    $this->prodi = $kelasprak;
   }
 
   public function showMahasiswa() {
     echo "Nama: " . $this->nama . "<br>";
     echo "NIM: " . $this->nim . "<br>";
-    echo "Prodi: " . $this->prodi . "<br>";
+    echo "Kelas Praktikum: " . $this->kelasprak . "<br>";
   }
 }
 
 // Membuat objek dari class InformasiPribadi
-$data1 = new mahasiswa("Giovanni Lucy", "121140060", "Teknik Informatika");
-$data2 = new mahasiswa("Qaisya Dwi", "121140063", "Teknik Informatika");
+$data1 = new mahasiswa("Giovanni Lucy", "121140060", "RC");
+$data2 = new mahasiswa("Qaisya Dwi", "121140063", "RA");
 
 // Memanggil metode tampilkanInfo dari objek
 $data1->showMahasiswa();
